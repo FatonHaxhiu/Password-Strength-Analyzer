@@ -1,8 +1,49 @@
 # Password Strength Analyzer
 
-A Python tool to evaluate password strength based on length, character types, and entropy. Provides feedback to improve password security.
+[![CI/CD](https://github.com/FatonHaxhiu/Password-Strength-Analyzer/workflows/CI/CD/badge.svg)](https://github.com/FatonHaxhiu/Password-Strength-Analyzer/actions)
 
-## Setup
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/your-username/password-strength-analyzer.git
+A Python-based tool to evaluate password strength based on length, character diversity, entropy, and common patterns. It provides a score (0-100) and feedback to help users create secure passwords. The project includes a command-line interface (CLI) and an optional Flask web interface.
+
+## Features
+- **Password Evaluation**: Assesses passwords based on:
+  - Length (minimum 8 characters, 12+ for bonus points).
+  - Character types (uppercase, lowercase, numbers, special characters).
+  - Entropy (randomness measure).
+- **Feedback**: Provides a strength score and suggestions (e.g., "Add special characters").
+- **CLI Interface**: Simple command-line tool for quick checks.
+- **Web Interface**: Optional Flask-based web app for browser-based password checking.
+- **Automated Testing**: Unit tests with `pytest` ensure reliability.
+- **CI/CD**: GitHub Actions runs tests and linting (`flake8`) on every push/pull request.
+
+## Prerequisites
+- Python 3.7+ (tested with 3.9)
+- Git
+- (Optional) A web browser for the Flask interface
+- (Optional) WSL on Windows for development (commands below are WSL-compatible)
+
+## Setup Instructions
+Copy and paste the following commands to set up the project:
+
+1. **Clone the Repository**:
+   git clone https://github.com/FatonHaxhiu/Password-Strength-Analyzer.git
+   cd Password-Strength-Analyzer
+
+Create and Activate a Virtual Environment:
+python3 -m venv venv
+source venv/bin/activate  # On Windows/WSL, use `venv\Scripts\activate` if needed
+
+Install Dependencies:
+pip install -r requirements.txt
+
+Usage Instructions
+
+Run the CLI tool:
+python password_strength_checker.py
+
+Example output:
+Password Strength Analyzer
+Enter a password: A1b@cD3eF!
+Score: 95/100
+Strength: Strong
+Feedback: Great password!
+
