@@ -17,21 +17,17 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.9'
+        python-version: '3.9'  # Stick with 3.9 for compatibility
 
     - name: Install dependencies
       run: |
-        python -m venv venv
-        source venv/bin/activate
+        python -m pip install --upgrade pip
         pip install -r requirements.txt
 
     - name: Run tests
       run: |
-        source venv/bin/activate
-        pytest tests/test_password_checker.py -v
+        pytest tests/ -v
 
     - name: Run linting
       run: |
-        source venv/bin/activate
-        pip install flake8
-        flake8 password_strength_checker.py --max-line-length=120
+        flake8 password_strength_checker.py app.py --max-line-length=120
