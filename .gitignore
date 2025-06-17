@@ -1,8 +1,21 @@
 # Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+.Python
 venv/
+*.egg-info/
+.pytest_cache/
+
+# Environment
+.env
 *.log
 
-# VS Code
+# IDE
 .vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
