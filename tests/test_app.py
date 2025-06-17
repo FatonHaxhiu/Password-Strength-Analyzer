@@ -22,7 +22,7 @@ def test_index_post_valid(client):
     response = client.post('/', data={'password': 'Ab1@xyz789'})
     assert response.status_code == 200
     assert b"Score" in response.data
-    assert b"Strength: Strong" in response.data
+    assert b"Strength:</strong> Strong" in response.data
 
 
 def test_index_post_empty(client):
