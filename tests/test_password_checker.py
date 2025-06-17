@@ -1,4 +1,3 @@
-import pytest
 from password_strength_checker import check_password_strength
 
 
