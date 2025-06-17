@@ -17,7 +17,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.9'  # Stick with 3.9 for compatibility
+        python-version: '3.9'
 
     - name: Install dependencies
       run: |
@@ -30,4 +30,4 @@ jobs:
 
     - name: Run linting
       run: |
-        flake8 password_strength_checker.py app.py --max-line-length=120
+        flake8 password_strength_checker.py app.py tests/ --max-line-length=120

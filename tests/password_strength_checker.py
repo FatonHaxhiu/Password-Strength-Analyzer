@@ -1,6 +1,7 @@
 import re
 import math
 
+
 def check_password_strength(password):
     """Evaluate password strength based on length, character types, and entropy."""
     if not password:
@@ -53,6 +54,7 @@ def check_password_strength(password):
     strength = "Weak" if score < 50 else "Medium" if score < 80 else "Strong"
     return {"score": score, "strength": strength, "feedback": feedback}
 
+
 def main():
     """Main function to run the CLI tool."""
     print("Password Strength Analyzer")
@@ -62,6 +64,7 @@ def main():
     print(f"Strength: {result['strength']}")
     feedback = ", ".join(result['feedback']) if result['feedback'] else "Great password!"
     print(f"Feedback: {feedback}")
+
 
 if __name__ == "__main__":
     main()
