@@ -28,53 +28,36 @@ A Python-based tool to evaluate password strength based on length, character div
    cd Password-Strength-Analyzer
 
 Create and Activate a Virtual Environment:
-
-python3 -m venv venv
-
-source venv/bin/activate  # On Windows/WSL, use `venv\Scripts\activate` if needed
+- python3 -m venv venv
+- source venv/bin/activate  # On Windows/WSL, use `venv\Scripts\activate` if needed
 
 Install Dependencies:
-
-pip install -r requirements.txt
-
-Usage Instructions
+- pip install -r requirements.txt
+- Usage Instructions
 
 Run the CLI tool:
-
-python password_strength_checker.py
+- python password_strength_checker.py
 
 Example output:
-
-Password Strength Analyzer
+-Password Strength Analyzer
 
 Enter a password: A1b@cD3eF!
-
-Score: 95/100
-
-Strength: Strong
-
-Feedback: Great password!
-
-Flask Web Interface
+- Score: 95/100
+- Strength: Strong
+- Feedback: Great password!
+- Flask Web Interface
 
 Launch the Flask web app to check passwords via a browser:
-
-python app.py
-
-Open http://localhost:5000 in your browser.
-
-Enter a password to receive a strength score and feedback.
-
-Running Tests
+- python app.py
+- Open http://localhost:5000 in your browser.
+- Enter a password to receive a strength score and feedback.
+- Running Tests
 
 Run unit tests to verify functionality:
+- pytest tests/ -v
 
-pytest tests/ -v
-
-Contributing
 
 Contributions are welcome! 
-
 To contribute:
 
 - Fork the repository.
