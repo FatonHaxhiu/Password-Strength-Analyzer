@@ -22,7 +22,6 @@ A Python-based tool to evaluate password strength based on length, character div
 - (Optional) WSL on Windows for development (commands below are WSL-compatible)
 
 ## Setup Instructions
-Copy and paste the following commands to set up the project:
 
 1. **Clone the Repository**:
    git clone https://github.com/FatonHaxhiu/Password-Strength-Analyzer.git
@@ -46,4 +45,27 @@ Enter a password: A1b@cD3eF!
 Score: 95/100
 Strength: Strong
 Feedback: Great password!
+
+Flask Web Interface
+Launch the Flask web app to check passwords via a browser:
+python app.py
+
+Open http://localhost:5000 in your browser.
+Enter a password to receive a strength score and feedback.
+
+Running Tests
+Run unit tests to verify functionality:
+pytest tests/ -v
+
+Contributing
+Contributions are welcome! To contribute:
+
+Fork the repository.
+Create a feature branch (git checkout -b feature/your-feature).
+Commit changes (git commit -m "Add your feature").
+Push to the branch (git push origin feature/your-feature).
+Open a pull request with a clear description
+
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
