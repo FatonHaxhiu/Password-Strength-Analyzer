@@ -1,5 +1,8 @@
 # Password Strength Analyzer
 
+![Python](https://img.shields.io/badge/Python-3.6%2B-blue.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Platform](https://img.shields.io/badge/Platform-WSL2%20%7C%20Linux-lightgrey)
 [![CI/CD](https://github.com/FatonHaxhiu/Password-Strength-Analyzer/workflows/CI/CD/badge.svg)](https://github.com/FatonHaxhiu/Password-Strength-Analyzer/actions)
 
 A Python-based tool to evaluate password strength based on length, character diversity, entropy, and common patterns. It provides a score (0-100) and feedback to help users create secure passwords. The project includes a command-line interface (CLI) and an optional Flask web interface.
